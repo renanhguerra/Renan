@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <Button
+        android:id="@+id/buttonDeletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="45dp"
+        android:onClick="botaoDeletar"
+        android:text="Deletar"
+        app:layout_constraintStart_toStartOf="@+id/editTextValorUpd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValorUpd" />
+
+    <TextView
+        android:id="@+id/textViewDescEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Descricao"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDescUpd"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDescUpd"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCatEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
+        android:text="Categoria"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerUpd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescEdit" />
+
+    <Button
+        android:id="@+id/Atualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:onClick="botaoAtualizar"
+        android:text="Atualizar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonDeletar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:text="Valor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCatEdit" />
+
+    <EditText
+        android:id="@+id/editTextDescUpd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDescEdit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextValorUpd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/spinnerUpd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCatEdit" />
+
+    <Spinner
+        android:id="@+id/spinnerUpd"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextValorUpd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCatEdit"
+        app:layout_constraintTop_toTopOf="@+id/editTextDescUpd" />
+
+    <TextView
+        android:id="@+id/textViewIDHidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="363dp" />
+</android.support.constraint.ConstraintLayout>
